@@ -24,7 +24,7 @@ console.log("Après :", file);
 // Lecture de la valeur du début de la file
 console.log("Le début de la file vaut :", file[file.length - 1]);
 
-// Savoir si la pile est vide ou pas
+// Savoir si la file est vide ou pas
 console.log("File vide ?", file.length === 0);
 
 /************************************************/
