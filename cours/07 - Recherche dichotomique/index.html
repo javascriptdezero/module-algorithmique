@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Devine le nombre</title>
+</head>
+<body>
+  <form action="">
+    <p>Devine le nombre entre 1 et <input type="number" value="10" id="nombreMax">.</p>
+    <p><button type="button" id="demarrer">Démarrer</button></p>
+    <div id="jeu">
+      <p id="messagePret"></p>
+      <p>Votre choix : <input type="number" id="nombreChoisi"><input type="submit"></input></p>
+      <input type="checkbox" id="tricher" name="tricher"><label for="tricher">Activer le mode triche</label>
+      <p>Vos essais :</p>
+      <ul id="essais">
+
+      </ul>
+      <p id="nombreTentatives"></p>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
