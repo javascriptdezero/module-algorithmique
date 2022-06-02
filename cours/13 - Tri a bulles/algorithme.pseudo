@@ -1,0 +1,17 @@
+/*  Algorithme du tri à bulles
+
+1. Comparer chaque couple de valeurs
+2. Si valeur gauche > valeur droite, échanger les valeurs
+3. Répéter jusqu'à ce que le tableau soit trié
+
+💡 Analogie : bulles de boisson gazeuse 🍺🥂 qui remontent à la surface.
+Les bulles sont les grands nombres, la surface est la droite du tableau.
+*/
+
+// Animation sur https://visualgo.net/en/sorting
+
+// Complexité quadratique : O(n^2) 🐌
+
+// Cas de test
+// tableau = [6, 12, 1, 18, 5, 25] => [1, 5, 6, 12, 18, 25]
+
