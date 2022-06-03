@@ -1,0 +1,17 @@
+/*  Algorithme de tri par insertion
+
+1. Démarrer en position = 1 (2ème élément du tableau)
+2. Comparer l'élément courant avec tous ceux à gauche
+3. Placer l'élément courant à la bonne place
+4. Passer à l'élément suivant jusqu'à la fin du tableau
+
+💡 Analogie : tri d'un jeu de carte dans sa main
+*/
+
+// Animation sur https://visualgo.net/en/sorting
+
+// Complexité quadratique : O(n^2) 🐌
+
+// Cas de test
+// tableau = [1, 5, 6, 12, 18, 25] => [1, 5, 6, 12, 18, 25]
+
