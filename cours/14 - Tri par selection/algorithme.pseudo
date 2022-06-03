@@ -1,0 +1,16 @@
+/*  Algorithme de tri par sélection
+
+1. Démarrer en position = 0 (1er élément du tableau)
+2. Chercher le plus petit élément du tableau à partir de position + 1
+3. Échanger l'élément à position avec le plus petit élément trouvé
+4. Répéter avec l'élément suivant dans le tableau
+
+*/
+
+// Animation sur https://visualgo.net/en/sorting
+
+// Complexité quadratique : O(n^2) 🐌
+
+// Cas de test
+// tableau = [1, 12, 6, 18, 5, 25] => [1, 5, 6, 12, 18, 25]
+
