@@ -1,0 +1,10 @@
+/* Algorithme récursif de permutations */
+
+// Cas de test ["1","2","3"]
+// => ["123", "132", "213", "231", "312", "321"]
+
+fonction permutations(tableau)
+  
+
+// Appel de la fonction
+permutations(["1", "2", "3"])
