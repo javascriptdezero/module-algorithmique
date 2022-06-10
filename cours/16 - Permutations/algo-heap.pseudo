@@ -1,0 +1,21 @@
+/* Algorithme de Heap */
+// https://fr.wikipedia.org/wiki/Algorithme_de_Heap
+
+// entrée : un entier k, un tableau A avec k <= taille(A)
+// effet : l'algorithme écrit successivement les k! permutations du tableau A affectant les k premiers indices
+// en appelant l'algorithme avec k = taille(A), on écrit toutes les permutations de A.
+// Ici, le tableau A est indexé de 0 à taille(A)-1.
+fonction Heap(k, A)
+  si k = 1
+    afficher(A)
+  sinon
+    // On génère les permutations fixant A[k-1]
+    Heap(k - 1, A)
+
+    // On génère les permutations échangeant A[k-1] avec les autres termes.
+    pour i de 0 a k-2
+      si k est pair
+        échanger(A[i], A[k-1])
+      sinon
+        échanger(A[0], A[k-1])
+      Heap(k - 1, A)
