@@ -4,7 +4,21 @@
 // => ["123", "132", "213", "231", "312", "321"]
 
 fonction permutations(tableau)
-  
+  // Cas de base
+  si tableau.longueur = 1
+    retourner [tableau[0]]
+  // Cas de récursion
+  solutions = []
+  pour i de 0 a tableau.longueur - 1
+    // 1(23)
+    // tableau = ["1","2","3"] et i = 0
+    autresElements = supprimerElementEnPosition(tableau, i)
+    // autresElements = ["2", "3"]
+    listePermutations = permutations(autresElements)
+    // listePermutations = (23) = ["23", "32"]
+    pour p de 0 a listePermutations.longueur - 1
+      solutions.ajouter(tableau[i] + listePermutations[p])
+  retourner solutions
 
 // Appel de la fonction
 permutations(["1", "2", "3"])
