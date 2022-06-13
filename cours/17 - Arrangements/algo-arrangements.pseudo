@@ -1,0 +1,22 @@
+/*
+1 + arrangements(2, [2,3,4])
+  12 + arrangements(1, [3,4])
+    123
+    124
+*/
+
+fonction arrangements(k, tableau)
+  // Cas de base
+  si k = 1
+    retourner tableau
+  solutions = []
+  // Cas de récursion
+  pour i de 0 a tableau.longueur - 1
+    // tableau = [2,3,4]
+    sousEnsemble = supprimerElementEnPosition(tableau, i)
+    // sousEnsemble = [3,4] lorsque i = 0
+    listeArrangements = arrangements(k - 1, sousEnsemble)
+    // listeArrangements = ["3", "4"]
+    pour chaque arrangement dans listeArrangements
+      solutions.ajouter(tableau[i] + arrangement)
+  retourner solutions
