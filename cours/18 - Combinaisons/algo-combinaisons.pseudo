@@ -1,0 +1,27 @@
+/* k = 3 éléments dans E = [1,2,3,4] dont n = 4
+1 + combinaisons(2, [2,3,4])
+  12 + combinaisons(1, [3,4])
+    123
+    124
+  13 + combinaisons(1, [4])
+    134
+2 + combinaisons(2, [3,4])
+  23 + combinaisons(1, [4])
+    234
+*/
+
+fonction combinaisons(k, tableau)
+  si k = 1
+    retourner copie(tableau)
+  solutions = []
+  pour i de 0 a tableau.longueur - k
+    // tableau = [1,2,3,4]
+    sousEnsemble = tableau.sousTableauDepuisPosition(i + 1)
+    // sousEnsemble = [2,3,4]
+    listeCombinaisons = combinaisons(k - 1, sousEnsemble)
+    // listeCombinaisons = ["23","24","34"]
+    pour chaque combinaison dans listeCombinaisons
+      solutions.ajouter(tableau[i] + combinaison)
+  retourner solutions
+
+combinaisons(3, ["1","2","3","4"])
