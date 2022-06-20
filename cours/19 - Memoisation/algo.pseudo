@@ -1,0 +1,17 @@
+// Exemple de pseudo-code de mémoïsation appliquée à une fonction
+
+// Dictionnaire pour stocker les résultats
+resultats = {}
+
+// Fonction gourmande en temps d'exécution
+fonctionLente(parametre)
+  // Si on a déjà calculé le résultat précédemment, on le renvoie
+  si resultats[parametre] existe
+    retourner resultats[parametre]
+  sinon
+    // On calcule le résultat
+    resultat = ... /* calcul gourmand en temps */
+    // On stocke le resultat dans le dictionnaire
+    resultats[parametre] = resultat
+    // On renvoie le resultat
+    retourner resultat
